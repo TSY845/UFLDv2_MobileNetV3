@@ -4,7 +4,14 @@ PyTorch implementation of the paper "[Ultra Fast Deep Lane Detection with Hybrid
 
 ![](ufldv2.png "vis")
 
+# Notes
+
+This repo is based on original UFLDv2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
+
+This repo added MobileNetV3-Large backbone for training models using TuSimple and CULane datasets. Corresponding configuration files can be found in the `config` folder. All other operations are identical to the original UFLDv2 model. A pretrained Tusimple-MobileNetV3 model is also provided. However, due to changes of the model structure, the UFLDv2-MobileNetV3 training on CULane dataset seems to be more difficult. The default training parameters are not very promising and need to be further modified.
+
 # Demo 
+
 <a href="https://youtu.be/VkvpoHlaMe0
 " target="_blank"><img src="http://img.youtube.com/vi/VkvpoHlaMe0/0.jpg" 
 alt="Demo" width="240" height="180" border="10" /></a>
@@ -34,6 +41,7 @@ We provide trained models on CULane, Tusimple, and CurveLanes.
 | CULane     | ResNet34 | 76.0  |   [Google](https://drive.google.com/file/d/1AjnvAD3qmqt_dGPveZJsLZ1bOyWv62Yj/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/1PHNpVHboQlmpjM5NXl9IxQ?pwd=jw8f)   |
 | Tusimple   | ResNet18 | 96.11 |   [Google](https://drive.google.com/file/d/1Clnj9-dLz81S3wXiYtlkc4HVusCb978t/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/1umHo0RZIAQ1l_FzL2aZomw?pwd=6xs1)   |
 | Tusimple   | ResNet34 | 96.24 |   [Google](https://drive.google.com/file/d/1pkz8homK433z39uStGK3ZWkDXrnBAMmX/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/1Eq7oxnDoE0vcQGzs1VsGZQ?pwd=b88p)   |
+| Tusimple | MobileNetV3-Large | 96.48 | [Baidu](https://pan.baidu.com/s/1H3V0AliO8u42olwhIEqE9Q?pwd=1kh0)(1kh0) |
 | CurveLanes | ResNet18 | 80.42 |   [Google](https://drive.google.com/file/d/1VfbUvorKKMG4tUePNbLYPp63axgd-8BX/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/1jCqKqgSQdh6nwC5pYpYO1A?pwd=urhe)   |
 | CurveLanes | ResNet34 | 81.34 |   [Google](https://drive.google.com/file/d/1O1kPSr85Icl2JbwV3RBlxWZYhLEHo8EN/view?usp=sharing)/[Baidu](https://pan.baidu.com/s/1fk2Wg-1QoHXTnTlasSM6uQ?pwd=4mn3)   |
 
