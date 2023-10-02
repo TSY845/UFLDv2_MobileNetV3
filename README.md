@@ -6,9 +6,9 @@ PyTorch implementation of the paper "[Ultra Fast Deep Lane Detection with Hybrid
 
 # Notes
 
-This repo is based on original UFLDv2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
+This repo is based on the original UFLDv2: https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2
 
-This repo added MobileNetV3-Large backbone for training models using TuSimple and CULane datasets. Corresponding configuration files can be found in the `config` folder. All other operations are identical to the original UFLDv2 model. A pretrained Tusimple-MobileNetV3 model is also provided. However, due to changes of the model structure, the UFLDv2-MobileNetV3 training on CULane dataset seems to be more difficult. The default training parameters are not very promising and need to be further modified.
+This repo added MobileNetV3-Large backbone for training models using TuSimple and CULane datasets. Corresponding configuration files can be found in the `config` folder. All other operations are identical to the original UFLDv2 model. A pretrained Tusimple-MobileNetV3 model is also provided. However, due to changes in the model structure, the UFLDv2-MobileNetV3 training on the CULane dataset seems to be more difficult. The default training parameters are not very promising and need to be further modified.
 
 # Demo 
 
